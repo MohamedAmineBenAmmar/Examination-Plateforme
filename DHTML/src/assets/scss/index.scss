@@ -1,0 +1,63 @@
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/fonts";
+
+html {
+	color: $mainFontColor;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background: $bg-color;
+	font-family: $mainFont;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	padding: 0;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.demo--container {
+	height: 100%;
+}
+
+.dhx_radiobutton__input:checked+.dhx_radiobutton__visual-input,
+.dhx_checkbox__input:checked+.dhx_checkbox__visual-input {
+	background-color: #65a6e7;
+	border-color: #65a6e7;
+
+	&:focus {
+		border-color: #65a6e7;
+	}
+}
+
+.dhx_demo-sidebar__logo{
+	width: 600px !important;
+	height: 120px !important;
+}
+
+
+@import "components/sidebar";
+@import "components/toolbar";
+@import "components/exams";
+@import "components/empty";
+@import "components/form";
+@import "components/window";

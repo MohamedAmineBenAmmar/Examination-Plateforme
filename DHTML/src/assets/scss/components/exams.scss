@@ -1,0 +1,94 @@
+.dhx_demo-exam {
+
+	&-filter {
+		.dhx_button.dhx_button--color_primary {
+			background-color: #65A6E7;
+		}
+	}
+
+	&-grid {
+
+		&__view {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+
+			.dhx_button {
+				background-color: rgba(91, 108, 191, 0.8);
+
+				&:focus, &:hover {
+					background-color: rgba(91, 108, 191, 0.9);
+				}
+
+				&:active {
+					background-color: rgba(91, 108, 191, 1);
+				}
+
+				&:disabled {
+					background-color: rgba(91, 108, 191, 0.4);
+				}
+			}
+		}
+
+		&__status {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+
+			.dhx_demo-active, .dhx_demo-hidden {
+				width: 100px;
+				border: 1px solid;
+				border-radius: 20px;
+				text-align: center;
+				text-transform: capitalize;
+				font-weight: 500;
+				line-height: 20px;
+			}
+
+			.dhx_demo-active {
+				border-color: rgba(10, 177, 105, 0.5);
+				color: #0AB169;
+			}
+
+			.dhx_demo-hidden {
+				border-color: rgba(101, 166, 231, 0.5);
+				color: #65A6E7;
+			}
+		}
+
+		&__controls {
+			display: flex;
+			height: 100%;
+			justify-content: center;
+
+			& button {
+				align-self: center;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+				width: 28px;
+				height: 28px;
+				border-radius: 62px;
+				border: none;
+				outline: 0;
+				background: #65A6E7;
+				margin: 0 8px;
+			}
+
+			&__icon {
+				color: #ffffff;
+				width: 16px;
+				height: 16px;
+				font-size: 16px;
+				line-height: 16px;
+			}
+		}
+	}
+}
